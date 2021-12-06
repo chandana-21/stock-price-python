@@ -7,7 +7,7 @@ st.write(
 
     # Stock Price Python App
 
-    Stock **closing price** and ***volume price*** of Google are shown below!
+    Stock **closing price** and ***volume price*** of Apple are shown below!
 
     """
 )
@@ -29,8 +29,19 @@ st.write("""
 """)
 st.line_chart(tickerDf.Volume)
 
-tickerData.info
+st.write("""
+    ## Info
+""")
+info = tickerData.info
+for key, value in info.items():
+    st.write(str(key) + ' - ' + str(value))
 
+st.write("""
+    ## Analysts Recommendations
+""")
 tickerData.recommendations
 
+st.write("""
+    ## Upcoming events of the company
+""")
 tickerData.calendar
