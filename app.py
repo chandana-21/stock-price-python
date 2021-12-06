@@ -7,7 +7,7 @@ st.write(
 
     # Stock Price Python App
 
-    Stock closig price and volume of Google are shown below!
+    Stock **closig price** and ***volume*** of Google are shown below!
 
     """
 )
